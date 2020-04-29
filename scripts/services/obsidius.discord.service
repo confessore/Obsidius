@@ -1,0 +1,16 @@
+[Unit]
+Description=Obsidius Discord Bot
+
+[Service]
+WorkingDirectory=/var/dotnetcore/Obsidius.Discord
+ExecStart=/usr/bin/dotnet /var/dotnetcore/Obsidius.Discord/Obsidius.Discord.dll
+Restart=always
+RestartSec=10
+SyslogIdentifier=obsidius.discord
+User=root
+Environment=ASPNETCORE_ENVIRONMENT=Production
+Environment=DOTNET_PRINT_TELEMETRY_MESSAGE=false
+Environment=ObsidiusDiscordToken=
+
+[Install]
+WantedBy=multi-user.target

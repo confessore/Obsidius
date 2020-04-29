@@ -1,0 +1,54 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29926.136
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{B9982FA1-9851-4F0E-A293-ACA94F221F0B}"
+	ProjectSection(SolutionItems) = preProject
+		.gitattributes = .gitattributes
+		.gitignore = .gitignore
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{6C06933D-EF75-4F51-AE39-0C95585AFEFD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "scripts", "scripts", "{FF55E2B0-C701-49AF-BB9E-14C9B2EA8A8D}"
+	ProjectSection(SolutionItems) = preProject
+		scripts\add_services.sh = scripts\add_services.sh
+		scripts\disable_services.sh = scripts\disable_services.sh
+		scripts\enable_services.sh = scripts\enable_services.sh
+		scripts\remove_services.sh = scripts\remove_services.sh
+		scripts\update.sh = scripts\update.sh
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Obsidius.Discord", "src\Obsidius.Discord\Obsidius.Discord.csproj", "{EE7AAE62-163C-40A8-93C7-4CA7FB16A743}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "services", "services", "{172BF987-00A4-4F64-B7B7-897CE6BC86FE}"
+	ProjectSection(SolutionItems) = preProject
+		scripts\services\obsidius.discord.service = scripts\services\obsidius.discord.service
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EE7AAE62-163C-40A8-93C7-4CA7FB16A743}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EE7AAE62-163C-40A8-93C7-4CA7FB16A743}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EE7AAE62-163C-40A8-93C7-4CA7FB16A743}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EE7AAE62-163C-40A8-93C7-4CA7FB16A743}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{6C06933D-EF75-4F51-AE39-0C95585AFEFD} = {B9982FA1-9851-4F0E-A293-ACA94F221F0B}
+		{FF55E2B0-C701-49AF-BB9E-14C9B2EA8A8D} = {B9982FA1-9851-4F0E-A293-ACA94F221F0B}
+		{EE7AAE62-163C-40A8-93C7-4CA7FB16A743} = {6C06933D-EF75-4F51-AE39-0C95585AFEFD}
+		{172BF987-00A4-4F64-B7B7-897CE6BC86FE} = {FF55E2B0-C701-49AF-BB9E-14C9B2EA8A8D}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A46CDB47-2661-46AC-AB25-BBD68F1CCE3A}
+	EndGlobalSection
+EndGlobal
